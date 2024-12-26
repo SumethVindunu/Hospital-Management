@@ -9,6 +9,7 @@ import MyProfile from './pages/MyProfile';
 import MyAppointments from './pages/MyAppointments';
 import Appointment from './pages/Appointment';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 
 
@@ -26,10 +27,12 @@ const App = () => {
         <Route path='/contact' element={<Contect/>}/>
         <Route path='/my-profile' element={<MyProfile/>}/>
         <Route path='/my-appointment' element={<MyAppointments/>}/>
-        <Route path='/appointment' element={<Appointment/>}/>
+        <Route path='/appointment/:docId' element={<Appointment/>}/>
+
 
         
       </Routes>
+      <Footer/>
     </div>
   )
 }
